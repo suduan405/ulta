@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A special birthday gift made with love — a personal, romantic, and elegant birthday website." />
+  <meta name="theme-color" content="#f8e0e8" />
+  <title>Happy Birthday ♡</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       OPENING SCREEN
+  =========================================== -->
+  <div class="opening-screen" id="opening-screen" role="dialog" aria-modal="true" aria-label="Birthday surprise opening">
+    <div class="opening-particles" id="opening-particles" aria-hidden="true"></div>
+
+    <div class="opening-content">
+      <div class="opening-decoration" aria-hidden="true">
+        <span class="opening-petal opening-petal--1">&#10047;</span>
+        <span class="opening-petal opening-petal--2">&#10046;</span>
+        <span class="opening-petal opening-petal--3">&#10047;</span>
+      </div>
+
+      <p class="opening-eyebrow">&#9825; &mdash; for someone special &mdash; &#9825;</p>
+      <h1 class="opening-message">Something special<br><em>is waiting for you&hellip;</em></h1>
+      <p class="opening-hint">Close your eyes, take a breath, and press the button below.</p>
+
+      <button class="opening-button" id="opening-enter-button" type="button" aria-label="Open your birthday surprise">
+        <span class="opening-button-text">Open Your Surprise &#9825;</span>
+        <span class="opening-button-ripple" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FLOATING HEARTS LAYER
+  =========================================== -->
+  <div class="floating-hearts-layer" id="floating-hearts-layer" aria-hidden="true"></div>
+
+  <!-- ==========================================
+       NAVIGATION
+  =========================================== -->
+  <nav class="nav-container" id="nav-container" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero-section" class="nav-brand" aria-label="Go to top">
+        <span class="nav-brand-symbol" aria-hidden="true">&#9825;</span>
+        <span class="nav-brand-text">Happy Birthday</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li role="listitem"><a href="#hero-section"      class="nav-link" aria-label="Go to Home">Home</a></li>
+        <li role="listitem"><a href="#gallery-section"   class="nav-link" aria-label="Go to Memories">Memories</a></li>
+        <li role="listitem"><a href="#letter-section"    class="nav-link" aria-label="Go to Letter">Letter</a></li>
+        <li role="listitem"><a href="#wishes-section"    class="nav-link" aria-label="Go to Wishes">Wishes</a></li>
+        <li role="listitem"><a href="#surprise-section"  class="nav-link" aria-label="Go to Surprise">Surprise</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+  =========================================== -->
+  <section class="hero-section" id="hero-section" aria-label="Birthday hero">
+    <div class="hero-background-overlay" aria-hidden="true"></div>
+
+    <div class="hero-decoration hero-decoration--top-left" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="rgba(248,180,200,0.18)" d="M42.2,-62.2C54.3,-54.3,63.5,-41.5,68.3,-27.3C73.1,-13.1,73.5,2.6,68.8,16.4C64.1,30.2,54.3,42.1,42.3,51.5C30.2,60.9,16,67.8,-0.2,68.1C-16.4,68.4,-32.8,62.1,-44.5,52.1C-56.2,42.1,-63.2,28.4,-66.1,13.7C-69,-1,-67.8,-16.7,-61.8,-30.1C-55.7,-43.4,-44.8,-54.4,-32.3,-62.2C-19.7,-70,-9.9,-74.6,2.6,-78C15.1,-81.5,30.1,-70.1,42.2,-62.2Z" transform="translate(100 100)" />
+      </svg>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow" aria-hidden="true">&#10022; Happy Birthday &#10022;</p>
+        <h1 class="hero-title">
+          Happy Birthday,<br>
+          <span class="hero-name" id="hero-name-display">[Her Name]</span>
+        </h1>
+        <p class="hero-subtitle">Today is all about you.</p>
+        <p class="hero-description">
+          Another year of your beautiful story begins today.<br>
+          And I am grateful to be a part of it.
+        </p>
+        <a href="#gallery-section" class="hero-button" aria-label="Continue scrolling to memories">
+          Continue Our Story &darr;
+        </a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-frame" aria-label="Photo frame">
+          <img
+            src="assets/images/hero-photo.jpg"
+            alt="A beautiful memory"
+            class="hero-image"
+            id="hero-photo"
+          />
+          <div class="hero-image-placeholder" aria-hidden="true">
+            <span class="hero-image-placeholder-icon">&#10047;</span>
+            <span class="hero-image-placeholder-text">Your Photo Here</span>
+          </div>
+        </div>
+        <div class="hero-image-badge" aria-hidden="true">&#9825;</div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="hero-scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       COUNTDOWN SECTION
+  =========================================== -->
+  <section class="countdown-section" id="countdown-section" aria-label="Birthday countdown">
+    <div class="countdown-container">
+      <div class="countdown-header">
+        <p class="countdown-eyebrow">&#10022; Counting Down &#10022;</p>
+        <h2 class="countdown-title">Your Special Day</h2>
+      </div>
+
+      <div class="countdown-display" id="birthday-countdown" role="timer" aria-live="polite" aria-label="Birthday countdown timer">
+        <div class="countdown-item">
+          <span class="countdown-value" id="countdown-days">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-separator" aria-hidden="true">:</div>
+        <div class="countdown-item">
+          <span class="countdown-value" id="countdown-hours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-separator" aria-hidden="true">:</div>
+        <div class="countdown-item">
+          <span class="countdown-value" id="countdown-minutes">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-separator" aria-hidden="true">:</div>
+        <div class="countdown-item">
+          <span class="countdown-value" id="countdown-seconds">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+
+      <p class="countdown-today-message" id="countdown-today-message" role="status" aria-live="assertive"></p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GALLERY / MEMORIES SECTION
+  =========================================== -->
+  <section class="gallery-section" id="gallery-section" aria-label="Photo memories gallery">
+    <div class="gallery-container">
+      <div class="gallery-header">
+        <p class="gallery-eyebrow">&#10022; Cherished Moments &#10022;</p>
+        <h2 class="gallery-title">Our Little Memories</h2>
+        <p class="gallery-subtitle">Every photo holds a feeling that words cannot describe.</p>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid" role="list" aria-label="Memory photos">
+
+        <article class="gallery-item" role="listitem" aria-label="Memory photo 1">
+          <div class="gallery-image-wrapper">
+            <img
+              src="assets/images/memory-1.jpg"
+              alt="A beautiful memory together"
+              class="gallery-image"
+              loading="lazy"
+            />
+            <div class="gallery-placeholder" aria-hidden="true"><span>Memory 1</span></div>
+            <div class="gallery-overlay">
+              <p class="gallery-caption">A moment to remember &#9825;</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">&#8853;</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-item gallery-item--wide" role="listitem" aria-label="Memory photo 2">
+          <div class="gallery-image-wrapper">
+            <img
+              src="assets/images/memory-2.jpg"
+              alt="Another beautiful memory"
+              class="gallery-image"
+              loading="lazy"
+            />
+            <div class="gallery-placeholder" aria-hidden="true"><span>Memory 2</span></div>
+            <div class="gallery-overlay">
+              <p class="gallery-caption">You make everything brighter &#9825;</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">&#8853;</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-item" role="listitem" aria-label="Memory photo 3">
+          <div class="gallery-image-wrapper">
+            <img
+              src="assets/images/memory-3.jpg"
+              alt="Special memory photo 3"
+              class="gallery-image"
+              loading="lazy"
+            />
+            <div class="gallery-placeholder" aria-hidden="true"><span>Memory 3</span></div>
+            <div class="gallery-overlay">
+              <p class="gallery-caption">Every second with you counts &#9825;</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">&#8853;</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-item" role="listitem" aria-label="Memory photo 4">
+          <div class="gallery-image-wrapper">
+            <img
+              src="assets/images/memory-4.jpg"
+              alt="Special memory photo 4"
+              class="gallery-image"
+              loading="lazy"
+            />
+            <div class="gallery-placeholder" aria-hidden="true"><span>Memory 4</span></div>
+            <div class="gallery-overlay">
+              <p class="gallery-caption">Smiling because of you &#9825;</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">&#8853;</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-item gallery-item--tall" role="listitem" aria-label="Memory photo 5">
+          <div class="gallery-image-wrapper">
+            <img
+              src="assets/images/memory-5.jpg"
+              alt="Special memory photo 5"
+              class="gallery-image"
+              loading="lazy"
+            />
+            <div class="gallery-placeholder" aria-hidden="true"><span>Memory 5</span></div>
+            <div class="gallery-overlay">
+              <p class="gallery-caption">The best chapters of us &#9825;</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">&#8853;</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-item" role="listitem" aria-label="Memory photo 6">
+          <div class="gallery-image-wrapper">
+            <img
+              src="assets/images/memory-6.jpg"
+              alt="Special memory photo 6"
+              class="gallery-image"
+              loading="lazy"
+            />
+            <div class="gallery-placeholder" aria-hidden="true"><span>Memory 6</span></div>
+            <div class="gallery-overlay">
+              <p class="gallery-caption">Forever in my heart &#9825;</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">&#8853;</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GALLERY LIGHTBOX MODAL
+  =========================================== -->
+  <div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Photo lightbox" hidden>
+    <button class="lightbox-close-button" id="lightbox-close-button" type="button" aria-label="Close lightbox">&#10005;</button>
+    <button class="lightbox-prev-button" id="lightbox-prev-button" type="button" aria-label="Previous photo">&#8249;</button>
+    <button class="lightbox-next-button" id="lightbox-next-button" type="button" aria-label="Next photo">&#8250;</button>
+
+    <div class="lightbox-content">
+      <img class="lightbox-image" id="lightbox-image" src="" alt="" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+
+    <div class="lightbox-counter" id="lightbox-counter" aria-live="polite"></div>
+  </div>
+
+  <!-- ==========================================
+       LETTER SECTION
+  =========================================== -->
+  <section class="letter-section" id="letter-section" aria-label="Birthday letter">
+    <div class="letter-container">
+      <div class="letter-header">
+        <p class="letter-eyebrow">&#10022; From the Heart &#10022;</p>
+        <h2 class="letter-title">A Letter For You &#9825;</h2>
+        <p class="letter-subtitle">Something I have been wanting to say&hellip;</p>
+      </div>
+
+      <div class="letter-card" id="letter-card" aria-live="polite">
+        <div class="letter-envelope" id="letter-envelope" aria-label="Birthday letter envelope">
+          <div class="letter-envelope-flap" aria-hidden="true"></div>
+          <div class="letter-envelope-body" aria-hidden="true">
+            <span class="letter-envelope-seal" aria-hidden="true">&#9825;</span>
+          </div>
+          <button class="letter-open-button" id="letter-open-button" type="button" aria-label="Open the birthday letter">
+            Open Letter
+          </button>
+        </div>
+
+        <div class="letter-content" id="letter-content" hidden aria-label="Letter content">
+          <div class="letter-content-inner">
+            <p class="letter-date" id="letter-date"></p>
+            <h3 class="letter-greeting" id="letter-greeting">Happy Birthday, [Her Name].</h3>
+            <div class="letter-body" id="letter-body">
+              <p>Today is not just another day.</p>
+              <p>It is a reminder of how special you are &mdash; and how beautifully your presence can make ordinary moments feel extraordinary.</p>
+              <p>You carry so much light with you, more than you probably realize. The way you smile, the way you care, the way you simply <em>exist</em> &mdash; it makes the world a little warmer.</p>
+              <p>I hope this new chapter brings you every reason to laugh out loud, to dream without limits, and to feel deeply, genuinely happy.</p>
+              <p>Keep being the wonderful person you are. The world is better because you are in it.</p>
+            </div>
+            <p class="letter-closing">With love &amp; warmth,</p>
+            <p class="letter-signature" id="letter-signature">Someone who cares &#9825;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WISHES SECTION
+  =========================================== -->
+  <section class="wishes-section" id="wishes-section" aria-label="Birthday wishes">
+    <div class="wishes-container">
+      <div class="wishes-header">
+        <p class="wishes-eyebrow">&#10022; With All My Heart &#10022;</p>
+        <h2 class="wishes-title">My Wishes For You</h2>
+        <p class="wishes-subtitle">May every wish come true, one beautiful day at a time.</p>
+      </div>
+
+      <div class="wishes-grid">
+
+        <article class="wish-card" data-wish-index="1" aria-label="Wish for Happiness">
+          <div class="wish-icon-wrapper" aria-hidden="true">
+            <span class="wish-icon">&#127800;</span>
+          </div>
+          <span class="wish-number" aria-hidden="true">01</span>
+          <h3 class="wish-title">Happiness</h3>
+          <p class="wish-description">May every morning greet you with peace, and every night end with a grateful smile.</p>
+        </article>
+
+        <article class="wish-card" data-wish-index="2" aria-label="Wish for Dreams">
+          <div class="wish-icon-wrapper" aria-hidden="true">
+            <span class="wish-icon">&#10024;</span>
+          </div>
+          <span class="wish-number" aria-hidden="true">02</span>
+          <h3 class="wish-title">Dreams</h3>
+          <p class="wish-description">May your wildest dreams feel possible, and your courage be stronger than your fears.</p>
+        </article>
+
+        <article class="wish-card" data-wish-index="3" aria-label="Wish for Success">
+          <div class="wish-icon-wrapper" aria-hidden="true">
+            <span class="wish-icon">&#127775;</span>
+          </div>
+          <span class="wish-number" aria-hidden="true">03</span>
+          <h3 class="wish-title">Success</h3>
+          <p class="wish-description">May every effort you give bloom into something beautiful and beyond what you imagined.</p>
+        </article>
+
+        <article class="wish-card" data-wish-index="4" aria-label="Wish for Love">
+          <div class="wish-icon-wrapper" aria-hidden="true">
+            <span class="wish-icon">&#128149;</span>
+          </div>
+          <span class="wish-number" aria-hidden="true">04</span>
+          <h3 class="wish-title">Love</h3>
+          <p class="wish-description">May you always feel loved, chosen, and cherished &mdash; exactly as you are.</p>
+        </article>
+
+        <article class="wish-card" data-wish-index="5" aria-label="Wish for Beautiful Memories">
+          <div class="wish-icon-wrapper" aria-hidden="true">
+            <span class="wish-icon">&#128247;</span>
+          </div>
+          <span class="wish-number" aria-hidden="true">05</span>
+          <h3 class="wish-title">Beautiful Memories</h3>
+          <p class="wish-description">May this year write memories so warm and golden, you will smile just thinking about them.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SURPRISE SECTION
+  =========================================== -->
+  <section class="surprise-section" id="surprise-section" aria-label="Interactive birthday surprise">
+    <div class="surprise-container">
+      <div class="surprise-header">
+        <p class="surprise-eyebrow">&#10022; The Final Gift &#10022;</p>
+        <h2 class="surprise-title">One Last Surprise&hellip;</h2>
+        <p class="surprise-subtitle">The best gift is saved for last.</p>
+      </div>
+
+      <div class="surprise-content">
+        <div class="gift-container" id="gift-container">
+          <div class="gift-box" id="gift-box" aria-label="Gift box">
+            <div class="gift-lid" id="gift-lid" aria-hidden="true">
+              <div class="gift-ribbon-horizontal" aria-hidden="true"></div>
+            </div>
+            <div class="gift-body" aria-hidden="true">
+              <div class="gift-ribbon-vertical" aria-hidden="true"></div>
+              <div class="gift-ribbon-bow" aria-hidden="true">
+                <span class="gift-bow-left"></span>
+                <span class="gift-bow-right"></span>
+              </div>
+            </div>
+          </div>
+
+          <button class="gift-open-button" id="gift-open-button" type="button" aria-label="Open the birthday gift">
+            Open The Gift &#127873;
+          </button>
+        </div>
+
+        <div class="surprise-message" id="surprise-message" hidden aria-live="assertive" role="status">
+          <div class="surprise-message-inner">
+            <p class="surprise-message-headline" id="surprise-headline">Happy Birthday, [Her Name] &#9825;</p>
+            <div class="surprise-message-divider" aria-hidden="true">&#10022;</div>
+            <p class="surprise-message-body">
+              May your days always be filled with<br>
+              beautiful moments, genuine smiles,<br>
+              and everything your heart wishes for.
+            </p>
+            <p class="surprise-message-closing">You deserve every wonderful thing. &#9825;</p>
+            <button class="surprise-replay-button" id="surprise-replay-button" type="button" aria-label="Replay the birthday surprise">
+              Replay Surprise &#8634;
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+  =========================================== -->
+  <footer class="footer-container" role="contentinfo">
+    <div class="footer-content">
+      <p class="footer-symbol" aria-hidden="true">&#9825;</p>
+      <p class="footer-message" id="footer-message">Made with &#9825; for <span class="footer-name-highlight" id="footer-name-highlight">[Her Name]</span></p>
+      <p class="footer-copyright">&copy; 2026 &middot; A Special Birthday &middot; All the love in the world &#9825;</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       MUSIC PLAYER
+  =========================================== -->
+  <div class="music-player" id="music-player" role="region" aria-label="Music player">
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Play birthday music" aria-pressed="false">
+      <span class="music-icon" id="music-icon" aria-hidden="true">&#9834;</span>
+    </button>
+    <div class="music-info" id="music-info" aria-hidden="true">
+      <span class="music-title" id="music-title">Birthday Song</span>
+      <span class="music-equalizer" aria-hidden="true">
+        <span class="music-eq-bar"></span>
+        <span class="music-eq-bar"></span>
+        <span class="music-eq-bar"></span>
+        <span class="music-eq-bar"></span>
+      </span>
+    </div>
+    <audio id="birthday-audio" preload="none" aria-hidden="true">
+      <source src="assets/music/birthday-song.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <!-- External Script -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
