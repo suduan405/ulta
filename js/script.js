@@ -536,7 +536,7 @@ function populateLetterDate() {
 function populateLetterPersonalization() {
   if (DOM.letterGreeting) {
     DOM.letterGreeting.textContent =
-      `Happy Birthday, ${CONFIG.herName}.`;
+      `Selamat Ulang Tahun, ${CONFIG.herName}.`;
   }
 
   if (DOM.letterSignature) {
@@ -615,7 +615,7 @@ function initializeSurprise() {
 function populateSurprisePersonalization() {
   if (DOM.surpriseHeadline) {
     DOM.surpriseHeadline.textContent =
-      `Happy Birthday, ${CONFIG.herName} \u2665`;
+      `Selamat Ulang Tahun, ${CONFIG.herName} \u2665`;
   }
 }
 
